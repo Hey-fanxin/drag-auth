@@ -1,0 +1,165 @@
+.drag-app {
+    width: 100% ;
+    height: 250px;
+}
+.drag-app .drag-img-box{
+    display: none;
+    position: relative;
+    width: 320px;
+    height: 144px;
+    margin: auto;
+    overflow: hidden;
+}
+.drag-app .drag-img-box .drag-img{
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+}
+.drag-app .drag-img-box .drag-img img{
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    vertical-align: top;
+}
+.drag-app .drag-img-box .drag-btn{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 40px;
+    height: 100%;
+}
+.drag-app .drag-img-box .drag-btn img{
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    vertical-align: top;
+}
+.drag-app .drag-switch-box{
+    position: relative;
+    width: 320px;
+    height: 40px;
+    margin: 20px auto;
+    border: 1px solid #e4e7eb;
+    border-radius: 3px;
+    background-color: #f7f9fa;
+}
+.drag-app .drag-switch-box .switch-btn-bg{
+    width: 100%;
+    height: 100%;
+    color: #333;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.drag-app .drag-switch-box .switch-btn-bg p{
+    margin: 0 auto;
+    letter-spacing:3px;
+}
+.drag-app .drag-switch-box .switch-btn{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    cursor: pointer;
+    transition: background .2s linear;
+    border-radius: 3px;
+}
+.drag-app .drag-switch-box .switch-btn p{
+    width: 14px;
+    height: 10px;
+    margin: 0 auto;
+    color: red;
+    background:url("http://cstaticdun.126.net//2.10.1/images/icon_light.f0aea65.png") no-repeat;
+    background-position: 0 -13px;
+    background-size: 34px 494px;
+}
+.drag-app .drag-switch-box .switch-btn:hover{
+    background: #1991fa;
+}
+.drag-app .drag-switch-box .switch-btn:hover p{
+    background-image: url(http://cstaticdun.126.net//2.10.1/images/icon_light.f0aea65.png);
+    background-position: 0 0;
+    background-size: 34px 494px;
+}
+.drag-app .drag-switch-box .switch-btn-left{
+    position: absolute;
+    left:-1px;
+    top:-1px;
+    width:0px;
+    height: 40px;
+    border-radius: 3px;
+    border:1px solid transparent;
+}
+.drag-app .drag-switch-box.moveing .switch-btn{
+    background: #1991fa;
+}
+.drag-app .drag-switch-box.moveing .switch-btn p{
+    background-image: url(http://cstaticdun.126.net//2.10.1/images/icon_light.f0aea65.png);
+    background-position: 0 0;
+    background-size: 34px 494px;
+}
+.drag-app .drag-switch-box.moveing .switch-btn-left{
+    border-color: #1991fa;
+    background: #d1e9fe;
+}
+.drag-app .drag-switch-box.error .switch-btn{
+    background-color: #f57a7a;
+}
+.drag-app .drag-switch-box.error .switch-btn p{
+    background-image: url(http://cstaticdun.126.net//2.10.1/images/icon_light.f0aea65.png);
+    background-position: 0 -68px;
+    background-size: 34px 494px;
+}
+.drag-app .drag-switch-box.error .switch-btn-left{
+    border-color: #f57a7a;
+    background-color: #fce1e1;
+}
+.drag-app .drag-switch-box.success .switch-btn{
+    background-color: #52ccba;
+}
+.drag-app .drag-switch-box.success .switch-btn p{
+    background-image: url(http://cstaticdun.126.net//2.10.1/images/icon_light.f0aea65.png);
+    background-position: 0 -26px;
+    background-size: 34px 494px;
+}
+.drag-app .drag-switch-box.success .switch-btn-left{
+    border-color: #52ccba;
+    background-color: #d2f4ef;
+}
+.drag-app .drag-loading-box{
+    display: none;
+    width: 320px;
+    height: 144px;
+    padding-top:45px;
+    margin: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.drag-app .drag-loading-box .loading{
+    width:24px;
+    height:24px;
+    margin: 0 auto;
+    margin-bottom:5px;
+}
+.drag-app .drag-loading-box .loading img{
+    vertical-align: top;
+    width: 100%;
+}
+.drag-app .drag-loading-box p{
+    font-size: 14px;    
+    color: #45494c;
+    margin: 0 auto;
+    text-align: center;
+}
+.drag-app.show-img .drag-img-box{
+    display: block;
+}
+.drag-app.show-loading .drag-loading-box{
+    display: block;
+}
+   
